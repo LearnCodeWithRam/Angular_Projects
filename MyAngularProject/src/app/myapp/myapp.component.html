@@ -1,0 +1,15 @@
+<p>this  is myapp child components </p>
+<button (click)="showHideDiv()">Show Or Hide Div</button>
+<div *ngIf="flag">
+    My Div
+    <ul>
+        <li *ngFor="let v of vechile" (click)="setSelectedVechile(v)">{{v}}</li>
+    </ul>
+ 
+    <div [ngSwitch] = "selectedVechile">
+      <font color="green" *ngSwitchCase="'Two Wheeler'"><b>Bike</b></font>
+      <font color="green" *ngSwitchCase="'Three Wheeler'"><b>Auto</b></font>
+      <font color="green" *ngSwitchCase="'Four Wheeler'"><b>Car</b></font>
+      <font color="green" *ngSwitchDefault><b>Invalid Selection</b></font>
+    </div>
+</div>

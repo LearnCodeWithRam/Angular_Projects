@@ -1,0 +1,13 @@
+
+<div id="ngStyleDetails">
+<form [formGroup]="myForm" (ngSubmit)="myFunction(myForm.value)">
+   <h2>Change style using NgStyle attribute</h2> 
+   <label>Text: <input type="text" id="text" formControlName="text"/></label><br>
+    <label>Background Color: <input type="text" id="bgColor" formControlName="bgColor"></label><br>
+     <label>Font Size(in-px): <input type="text" id="fontSize" formControlName="fontSize"/></label><br>
+      <label>Text Color: <input type="text" id="color" formControlName="color"/></label><br>
+    <button id="submit">Submit</button>
+    </form>
+</div>
+<p id="showText" [ngStyle] = "myStyle">{{textdata}}</p>
+

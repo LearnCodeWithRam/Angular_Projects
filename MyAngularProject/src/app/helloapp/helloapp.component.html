@@ -1,0 +1,18 @@
+<p> this is the another component helloap</p>
+<br/>
+
+<br>
+<h3>Welcome: {{name}}</h3>
+<p>Your age is: {{age}}</p>
+<p>Your salary is: {{salary}}</p>
+<button (click)="changeName()">Click me!</button>
+<p>function value is : {{getSum(20,34)}}</p>
+
+<br>
+<input type="text"  [value]="name"><br>
+<input type="text"  [(ngModel)]="name"><br>
+<input type="text"  value="{{age}}"><br><br>
+  <input type="submit" value="Submit">
+  <div><img [src]="displayimg" width="200px" height="200px"></div>
+  <div><img [src]="displayimg1" width="200px" height="200px"></div>
+  

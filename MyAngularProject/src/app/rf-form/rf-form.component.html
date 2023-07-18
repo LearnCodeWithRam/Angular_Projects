@@ -1,0 +1,17 @@
+<p>rf-form works!</p>
+<br>
+<h1>Reactive Form in Angular</h1>
+<br>
+<div class="form_container">
+    <form [formGroup]="myForm" (ngSubmit)="myFunction(myForm.value)">
+    <label>Name</label><input type="text" formControlName="name"/>
+    <br>
+    <label>Email</label><input type="text" formControlName="email"/>
+    <br>
+    <label>Age</label><input type="text" formControlName="age"/>
+    <br>
+    <label>Mobile Number</label><input type="text" formControlName="mobileNo"/> 
+    <br>
+    <button>Register</button>
+    </form>
+</div>
